@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عضویت در کانال‌ها</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 80%;
+            max-width: 300px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .confirm {
+            background-color: #28a745;
+        }
+        .confirm:hover {
+            background-color: #218838;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>برای دریافت ویدیو های 💋 عضو کانال های زیر بشوید 👇</h1>
+    
+    <!-- لینک اول -->
+    <a href="https://t.me/+fTTxAO_3l3QxNzE1" class="button" target="_blank">عضویت در کانال اول</a>
+    
+    <!-- لینک دوم -->
+    <a href="https://t.me/AfgSecretHack" class="button" target="_blank">عضویت در کانال دوم</a>
+    
+    <!-- دکمه تایید عضویت -->
+    <button class="button confirm" onclick="confirmMembership()">تایید عضویت</button>
+    
+    <!-- متن در حال تایید -->
+    <p class="message" id="status">در حال تایید ...........</p>
+
+    <script>
+        function confirmMembership() {
+            // تغییر متن به "در حال تایید ..."
+            document.getElementById('status').innerText = "در حال تایید ...";
+            
+            // شبیه‌سازی تایید عضویت (می‌توانید این بخش را با کد واقعی جایگزین کنید)
+            setTimeout(function() {
+                document.getElementById('status').innerText = "عضویت شما تایید شد! ✅";
+            }, 3000); // 3 ثانیه تأخیر برای شبیه‌سازی فرآیند تایید
+        }
+    </script>
+</body>
+</html>
